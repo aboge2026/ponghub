@@ -4,10 +4,10 @@ services:
       - url: "https://www.zegotech.cn/"
         response_regex: "备案号"  # 检查页面是否包含备案号文字
 
-  - name: "第二个网站"
+  - name: "talkline.cn"
     endpoints:
       - url: "https://talkline.cn/"
-        response_regex: "京ICP备"
+        response_regex: "备案号"
         
   - name: "备案号链接检测"
     endpoints:
