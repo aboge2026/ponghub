@@ -2,14 +2,12 @@ services:
   - name: "zegotech.cn"
     endpoints:
       - url: "https://www.zegotech.cn/"
-        response_regex: "备案号"  # 检查页面是否包含备案号文字
-
+        response_regex: "备案号"
   - name: "talkline.cn"
     endpoints:
       - url: "https://talkline.cn/"
         response_regex: "备案号"
-        
   - name: "备案号链接检测"
     endpoints:
-      - url: "https://beian.miit.gov.cn"  # 备案号跳转目标
-        expected_status: 200  # 期望返回正常
+      - url: "https://beian.miit.gov.cn"
+        expected_status: 200
