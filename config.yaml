@@ -1,14 +1,15 @@
 services:
-  - name: "My Pages"
+  - name: "zegotech.cn"
     endpoints:
-      - url: "https://blog.ch3nyang.top"
-      - url: "https://file.ch3nyang.top"
-      - url: "https://til.ch3nyang.top"
-      - url: "https://mind.ch3nyang.top"
-  - name: "My Services"
-    endpoints:
-      - url: "https://2024.ch3nyang.top/health"
-      - url: "https://2024.ch3nyang.top"
+      - url: "https://www.zegotech.cn/"
+        response_regex: "备案号"  # 检查页面是否包含备案号文字
 
-notifications:
-  enabled: false
+  - name: "第二个网站"
+    endpoints:
+      - url: "https://talkline.cn/"
+        response_regex: "京ICP备"
+        
+  - name: "备案号链接检测"
+    endpoints:
+      - url: "https://beian.miit.gov.cn"  # 备案号跳转目标
+        expected_status: 200  # 期望返回正常
