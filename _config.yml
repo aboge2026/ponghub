@@ -1,0 +1,7 @@
+remote_theme: pages-themes/slate
+plugins:
+  - jekyll-remote-theme
+  - jekyll-data
+
+title: PongHub 监控面板
+description: 网站状态和备案号监控
